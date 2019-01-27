@@ -41,6 +41,12 @@ function nodeTheme(themeObject) {
 
 ```
 
+will output, which is the input format you need to pass into the dom using [selector/element].style.setProperty(prop, value, priority?)
+```js
+"--themeDarker", #004578
+"--themeDark", #005a9e
+```
+
 
 
 
