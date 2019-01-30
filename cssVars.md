@@ -91,8 +91,16 @@ function writeThemeToCss(themeObject) {
 
 
 so to recap
+```js
 originalJss: themeDarker: '#004578'
+```
+```js
 newJss: themeDarker: 'var(--themeDarker)'
+```
+apply the original props to the dom : 
+```js
+..style.setProperty('--themeDarker', #004578)
+```
 
 
 
