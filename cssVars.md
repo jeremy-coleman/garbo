@@ -47,8 +47,19 @@ will output, which is the input format you need to pass into the dom using style
 "--themeDark", #005a9e
 ```
 
-
-
+or write to css directly 
+this is ideal if you want to just insert into head once,
+if you use setProperty though , it'll act similar to a JssThemeProvider
+```js
+function writeThemeToCss(themeObject) {
+    let obj = []
+  for(var k in themeObject){
+       obj+= `--${k}: ${themeObject[k]};`
+  }
+    console.log(obj)
+    //apend  or write to .css file in node
+}
+```
 
 
 
@@ -59,7 +70,7 @@ will output, which is the input format you need to pass into the dom using style
 other stuf
 
 
-cow
+copy on write / no proxy immer 
 ```js
 function update(current, updater) {
   if (
