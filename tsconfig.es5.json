@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "preserveConstEnums": true,
+    "lib": ["es2015", "esnext", "dom", "dom.iterable"],
+    "outDir": "_TEMP/es5",
+    "declaration": false,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
