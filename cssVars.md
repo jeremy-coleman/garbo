@@ -34,6 +34,19 @@ var myButtonStyle = theme => {
   }
 }
 ```
+or for better performance
+```js
+import {theme} from './someFile'
+var myButtonStyle = {
+ root: {
+  theme.palette.themeDarker
+  }
+}
+```
+
+notice you dont need a callback on the theme, because you update the variables in the dom. you're NOT rewriting any new css
+
+
 
 and you're jss is still encapsulated and themed to generic , completely overridable css.
 you also change it through DOM apis. meaning no need for style props in react components
